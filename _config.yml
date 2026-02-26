@@ -1,0 +1,7 @@
+title: Derek A
+description: Cybersecurity | IT Security | System Admin
+theme: minima
+markdown: kramdown
+
+minima:
+  skin: dark

@@ -49,3 +49,18 @@ a {
   margin-left: 20px;
   font-weight: 500;
 }
+
+.site-nav {
+  display: flex;
+  align-items: center;
+}
+
+.site-nav a {
+  margin-left: 20px;
+}
+
+.theme-toggle {
+  margin-left: auto;
+  cursor: pointer;
+  font-size: 1.1rem;
+}

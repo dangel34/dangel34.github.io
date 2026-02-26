@@ -8,6 +8,7 @@
   {{ content_for_header }}
 
   <link rel="stylesheet" href="{{ '/assets/css/dark.css' | relative_url }}">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
@@ -21,7 +22,10 @@
         <a href="{{ '/research' | relative_url }}">Research</a>
         <a href="{{ '/labs' | relative_url }}">Labs</a>
         <a href="{{ '/resume' | relative_url }}">Resume</a>
-        <span class="theme-toggle" onclick="toggleTheme()">🌗</span>
+
+        <span class="theme-toggle" onclick="toggleTheme()">
+          <i id="theme-icon" class="fas fa-moon"></i>
+        </span>
       </nav>
     </div>
   </header>

@@ -17,16 +17,18 @@
     <div class="wrapper">
       <a class="site-title" href="{{ '/' | relative_url }}">{{ site.title }}</a>
 
-      <nav class="site-nav">
-        <a href="{{ '/projects' | relative_url }}">Projects</a>
-        <a href="{{ '/research' | relative_url }}">Research</a>
-        <a href="{{ '/labs' | relative_url }}">Labs</a>
-        <a href="{{ '/resume' | relative_url }}">Resume</a>
-
-        <span class="theme-toggle" onclick="toggleTheme()">
+      <div class="nav-container">
+        <nav class="site-nav">
+          <a href="{{ '/projects' | relative_url }}">Projects</a>
+          <a href="{{ '/research' | relative_url }}">Research</a>
+          <a href="{{ '/labs' | relative_url }}">Labs</a>
+          <a href="{{ '/resume' | relative_url }}">Resume</a>
+        </nav>
+      
+        <div class="theme-toggle" onclick="toggleTheme()">
           <i id="theme-icon" class="fas fa-moon"></i>
-        </span>
-      </nav>
+        </div>
+      </div>
     </div>
   </header>
 

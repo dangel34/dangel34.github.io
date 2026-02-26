@@ -2,7 +2,7 @@
 layout: default
 ---
 
-## Derek A
+# Derek A
 **Systems Administration | Endpoint Security | Infrastructure Hardening**
 
 I focus on secure systems administration, patch management strategy, endpoint security controls, and infrastructure resilience. My work combines operational IT experience with security engineering principles to strengthen enterprise environments.

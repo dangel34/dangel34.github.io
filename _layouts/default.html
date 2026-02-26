@@ -43,20 +43,27 @@
   </footer>
 
 <script>
+function setTheme(theme) {
+  document.documentElement.setAttribute("data-theme", theme);
+  localStorage.setItem("theme", theme);
+
+  const icon = document.getElementById("theme-icon");
+  if (theme === "dark") {
+    icon.className = "fas fa-moon";
+  } else {
+    icon.className = "fas fa-sun";
+  }
+}
+
 function toggleTheme() {
   const current = document.documentElement.getAttribute("data-theme");
   const next = current === "dark" ? "light" : "dark";
-  document.documentElement.setAttribute("data-theme", next);
-  localStorage.setItem("theme", next);
+  setTheme(next);
 }
 
 (function () {
-  const saved = localStorage.getItem("theme");
-  if (saved) {
-    document.documentElement.setAttribute("data-theme", saved);
-  } else {
-    document.documentElement.setAttribute("data-theme", "dark");
-  }
+  const saved = localStorage.getItem("theme") || "dark";
+  setTheme(saved);
 })();
 </script>
 

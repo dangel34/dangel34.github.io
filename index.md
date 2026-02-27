@@ -34,4 +34,10 @@ I am particularly interested in compliance automation, vulnerability management,
 📎 [View Research](research.md)  
 📎 [View Labs](labs.md)
 
-[Security & Disclosure Policy]({{ '/security' | relative_url }})
+---
+
+### Professional Standards
+
+This portfolio includes research conducted exclusively in controlled lab environments.
+
+[Security & Responsible Disclosure Policy]({{ '/security' | relative_url }})

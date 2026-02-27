@@ -87,27 +87,7 @@
     </div>
   </footer>
 
-<script>
-function setTheme(theme) {
-  document.documentElement.setAttribute("data-theme", theme);
-  localStorage.setItem("theme", theme);
+  <script src="{{ '/assets/js/theme.js' | relative_url }}"></script>
 
-  const icon = document.getElementById("theme-icon");
-  if (theme === "dark") {
-    icon.className = "fas fa-moon";
-  } else {
-    icon.className = "fas fa-sun";
-  }
-}
-
-function toggleTheme() {
-  const current = document.documentElement.getAttribute("data-theme");
-  const next = current === "dark" ? "light" : "dark";
-  setTheme(next);
-}
-
-(function () {
-  const saved = localStorage.getItem("theme") || "dark";
-  setTheme(saved);
-})();
-</script>
+</body>
+</html>

@@ -32,7 +32,6 @@ I am particularly interested in compliance automation, vulnerability management,
 
 📎 [View Projects](projects.md)  
 📎 [View Research](research.md)  
-📎 [View Labs](labs.md)
 
 ---
 

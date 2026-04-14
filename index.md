@@ -11,7 +11,7 @@ I am particularly interested in compliance automation, vulnerability management,
 
 ---
 
-### 🔐 Core Areas of Focus
+### Core Areas of Focus
 
 - Systems Administration (Windows, Linux, cloud environments)
 - Patch & Vulnerability Management
@@ -22,16 +22,15 @@ I am particularly interested in compliance automation, vulnerability management,
 
 ---
 
-### 💻 Featured Work
+### Featured Work
 
-- Compliance Control Scanner (CMMC-focused automation)
-- Post-Quantum Cryptography Implementation (Kyber, Dilithium, SPHINCS+)
-- Website Tracker Viewer Broswer Extension
+- **[Cookiedle]({{ '/assets/documents/projects' | relative_url }})** — Daily guessing game with a cheat-proof serverless backend and 170+ cookie database
+- **[Post-Quantum Cryptography Research]({{ '/assets/documents/research' | relative_url }})** — NIST PQC standards analysis covering Kyber, Dilithium, and SPHINCS+
+- **[Alumni Data Science Project]({{ '/assets/documents/projects' | relative_url }})** — Privacy-aware OSINT data enrichment for institutional analytics
 
 ---
 
-📎 [View Projects](projects.md)  
-📎 [View Research](research.md)  
+[View Projects]({{ '/assets/documents/projects' | relative_url }}) &nbsp;|&nbsp; [View Research]({{ '/assets/documents/research' | relative_url }})
 
 ---
 

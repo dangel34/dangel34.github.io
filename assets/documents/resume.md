@@ -130,4 +130,4 @@ GRC fundamentals, Cyber Policy, Privacy Law
 
 ## Download Full Resume
 
-Resume downloads are only available via request, please reach out to amatory.madder_1s@icloud.com for more information.
+Resume downloads are only available via request — <a href="mailto:&#97;&#109;&#97;&#116;&#111;&#114;&#121;&#46;&#109;&#97;&#100;&#100;&#101;&#114;&#95;&#49;&#115;&#64;&#105;&#99;&#108;&#111;&#117;&#100;&#46;&#99;&#111;&#109;">reach out via email</a> for more information.

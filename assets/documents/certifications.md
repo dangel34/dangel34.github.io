@@ -1,9 +1,9 @@
 ---
 layout: default
-title: Training & Development
+title: Certifications
 ---
 
-# Training & Professional Development
+# Certifications & Training
 
 Structured coursework and formal training completed in support of defensive security engineering, threat analysis, and infrastructure protection.
 

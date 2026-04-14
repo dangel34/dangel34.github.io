@@ -34,7 +34,7 @@
       object-src 'none';
       base-uri 'self';
       frame-ancestors 'none';
-      form-action 'none';
+      form-action https://formsubmit.co;
     ">
 
   <!-- =========================
@@ -48,7 +48,7 @@
 
 </head>
 
-<body>
+<body{% if page.url == "/" %} class="page-home"{% endif %}>
 
   <header class="site-header">
     <div class="wrapper">
@@ -62,10 +62,11 @@
         <!-- Navigation + Toggle -->
         <div class="nav-right">
           <nav class="site-nav">
-            <a href="{{ '/assets/documents/projects' | relative_url }}">Projects</a>
-            <a href="{{ '/assets/documents/research' | relative_url }}">Research</a>
-            <a href="{{ '/assets/documents/certifications' | relative_url }}">Certifications</a>
-            <a href="{{ '/assets/documents/resume' | relative_url }}">Resume</a>
+            <a href="{{ '/assets/documents/projects' | relative_url }}"{% if page.url contains 'projects' %} class="active"{% endif %}>Projects</a>
+            <a href="{{ '/assets/documents/research' | relative_url }}"{% if page.url contains 'research' %} class="active"{% endif %}>Research</a>
+            <a href="{{ '/assets/documents/certifications' | relative_url }}"{% if page.url contains 'certifications' %} class="active"{% endif %}>Certifications</a>
+            <a href="{{ '/assets/documents/resume' | relative_url }}"{% if page.url contains 'resume' %} class="active"{% endif %}>Resume</a>
+            <a href="{{ '/contact' | relative_url }}"{% if page.url contains 'contact' %} class="active"{% endif %}>Contact</a>
           </nav>
 
           <div class="theme-toggle">
@@ -84,8 +85,11 @@
   </main>
 
   <footer class="site-footer">
-    <div class="wrapper">
-      © {{ site.time | date: "%Y" }} {{ site.title }}
+    <div class="wrapper footer-container">
+      <span>© {{ site.time | date: "%Y" }} {{ site.title }}</span>
+      <nav class="footer-nav">
+        <a href="https://github.com/dangel34" target="_blank" rel="noopener noreferrer">GitHub</a>
+      </nav>
     </div>
   </footer>
 

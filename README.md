@@ -53,7 +53,4 @@ Tool selection prioritizes visibility, control validation, and configuration int
 
 ## Contact
 
-For professional inquiries or security-related concerns regarding this repository:
-
-https://linkedin.com/da/1972
-amatory.madder_1s@icloud.com
+For professional inquiries or security-related concerns regarding this repository, reach out via [GitHub](https://github.com/dangel34).

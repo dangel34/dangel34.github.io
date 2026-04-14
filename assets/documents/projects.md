@@ -9,6 +9,7 @@ Hands-on implementation and lab-based engineering work focused on defensive secu
 
 ---
 
+<div class="project-card" markdown="1">
 
 ## Mercyhurst University Alumni Data Scientist Project  
 **Mercyhurst University**  
@@ -47,9 +48,11 @@ Delivered structured, enriched datasets to the University Advancement team to su
 
 Gained experience in collaborative data workflows, information validation, and privacy-aware data handling practices.
 
----
+</div>
 
-## Cookiedle
+<div class="project-card" markdown="1">
+
+## Cookiedle  
 **Personal Project**  
 2025
 
@@ -86,3 +89,5 @@ Automated cookie data collection using a Selenium scraper targeting noff.gg, wit
 Shipped a fully playable, cheat-proof daily game with a live player base. Gained hands-on experience with serverless architecture, secrets management, client/server trust boundaries, and automated data pipelines.
 
 **[▶ Play Cookiedle](https://dangel34.github.io/Cookiedle-Game)**
+
+</div>

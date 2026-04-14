@@ -17,4 +17,4 @@ All configurations, vulnerabilities, and architectural examples have been saniti
 
 The goal of this portfolio is to demonstrate defensive security engineering, research methodology, and risk analysis — not exploit publication.
 
-If you have concerns regarding any published material, please contact me directly.
+If you have concerns regarding any published material, please open an issue or reach out via [GitHub](https://github.com/dangel34).

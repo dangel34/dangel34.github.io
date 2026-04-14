@@ -10,31 +10,38 @@
 :root {
   --bg-color: #ffffff;
   --text-color: #111111;
-  --header-bg: #f5f5f5;
+  --header-bg: rgba(245, 245, 245, 0.92);
   --link-color: #0366d6;
+  --muted-color: #555555;
+  --card-bg: #f6f8fa;
+  --border-color: rgba(0, 0, 0, 0.1);
+  --btn-text: #ffffff;
 }
 
 [data-theme="dark"] {
   --bg-color: #0f1117;
   --text-color: #e6edf3;
-  --header-bg: #161b22;
+  --header-bg: rgba(22, 27, 34, 0.92);
   --link-color: #58a6ff;
+  --muted-color: #8b949e;
+  --card-bg: #161b22;
+  --border-color: rgba(255, 255, 255, 0.08);
+  --btn-text: #0f1117;
 }
 
 /* =========================
-   Global Styles
+   Typography
 ========================= */
 
 body {
   background-color: var(--bg-color);
   color: var(--text-color);
+  font-family: 'Segoe UI', system-ui, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif;
   transition: background-color 0.25s ease, color 0.25s ease;
 }
 
-.site-header,
-.site-footer {
-  background-color: var(--header-bg);
-  transition: background-color 0.25s ease;
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Cascadia Code', Consolas, Menlo, Monaco, 'Courier New', monospace;
 }
 
 a {
@@ -43,8 +50,22 @@ a {
 }
 
 /* =========================
-   Header Layout
+   Header
 ========================= */
+
+.site-header,
+.site-footer {
+  background-color: var(--header-bg);
+  transition: background-color 0.25s ease;
+}
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
 
 .header-container {
   display: flex;
@@ -67,6 +88,11 @@ a {
   font-weight: 500;
 }
 
+.site-nav a.active {
+  border-bottom: 2px solid var(--link-color);
+  padding-bottom: 2px;
+}
+
 /* =========================
    Theme Toggle
 ========================= */
@@ -81,6 +107,167 @@ a {
 .theme-toggle:hover {
   opacity: 1;
   transform: scale(1.1);
+}
+
+/* =========================
+   Content — Headings
+========================= */
+
+.page-content h2,
+.page-content h3 {
+  border-left: 3px solid var(--link-color);
+  padding-left: 0.65rem;
+}
+
+/* =========================
+   Content — Dividers
+========================= */
+
+.page-content hr {
+  border: none;
+  height: 1px;
+  background: linear-gradient(to right, var(--link-color), transparent);
+  opacity: 0.35;
+  margin: 2rem 0;
+}
+
+/* =========================
+   Content — Links (animated underline)
+========================= */
+
+.page-content a,
+.site-footer a {
+  text-decoration: none;
+  background-image: linear-gradient(var(--link-color), var(--link-color));
+  background-size: 0% 1px;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  transition: background-size 0.2s ease, color 0.2s ease;
+}
+
+.page-content a:hover,
+.site-footer a:hover {
+  background-size: 100% 1px;
+}
+
+/* =========================
+   Project Cards
+========================= */
+
+.project-card {
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 1.5rem 1.75rem;
+  margin-bottom: 1.5rem;
+  transition: border-color 0.2s ease;
+}
+
+.project-card:hover {
+  border-color: var(--link-color);
+}
+
+.project-card h2 {
+  margin-top: 0;
+}
+
+/* =========================
+   Homepage Hero
+========================= */
+
+.page-home .page-content h1 {
+  font-size: 2.2rem;
+  color: var(--link-color);
+  border-left: none;
+  padding-left: 0;
+}
+
+.page-home .page-content h1 + p {
+  color: var(--muted-color);
+}
+
+/* =========================
+   Footer
+========================= */
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.footer-nav {
+  display: flex;
+  gap: 16px;
+}
+
+/* =========================
+   Contact Form
+========================= */
+
+.contact-form {
+  max-width: 540px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  margin-top: 1rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.form-group label {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--muted-color);
+}
+
+.form-group input,
+.form-group textarea {
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  padding: 0.6rem 0.75rem;
+  color: var(--text-color);
+  font-family: inherit;
+  font-size: 0.95rem;
+  width: 100%;
+  box-sizing: border-box;
+  transition: border-color 0.2s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--link-color);
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 130px;
+}
+
+.submit-btn {
+  align-self: flex-start;
+  background: var(--link-color);
+  color: var(--btn-text);
+  border: none;
+  border-radius: 6px;
+  padding: 0.6rem 1.4rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  font-family: inherit;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.submit-btn:hover {
+  opacity: 0.82;
 }
 
 /* =========================
@@ -103,5 +290,47 @@ a {
     flex-wrap: wrap;
     gap: 10px;
     font-size: 0.9rem;
+  }
+}
+
+/* =========================
+   Print (Resume)
+========================= */
+
+@media print {
+  .site-header,
+  .site-footer {
+    display: none !important;
+  }
+
+  body {
+    background: white !important;
+    color: black !important;
+    font-size: 12pt;
+    font-family: Georgia, 'Times New Roman', serif !important;
+  }
+
+  a {
+    color: black !important;
+    text-decoration: underline;
+    background-image: none !important;
+  }
+
+  .page-content {
+    max-width: 100%;
+    padding: 0;
+  }
+
+  .page-content h2,
+  .page-content h3 {
+    border-left: none !important;
+    padding-left: 0 !important;
+    font-family: Georgia, 'Times New Roman', serif !important;
+  }
+
+  .page-content hr {
+    border-top: 1px solid #ccc !important;
+    background: none !important;
+    opacity: 1 !important;
   }
 }

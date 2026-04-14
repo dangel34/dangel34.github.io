@@ -22,14 +22,14 @@ Use the form below to send a message directly to my inbox. I'll get back to you 
 
 <form
   class="contact-form"
-  action="https://formsubmit.co/&#97;&#109;&#97;&#116;&#111;&#114;&#121;&#46;&#109;&#97;&#100;&#100;&#101;&#114;&#95;&#49;&#115;&#64;&#105;&#99;&#108;&#111;&#117;&#100;&#46;&#99;&#111;&#109;"
+  action="https://formsubmit.co/amatory.madder_1s@icloud.com"
   method="POST">
 
   <!-- FormSubmit configuration -->
   <input type="hidden" name="_subject" value="Portfolio Contact">
   <input type="hidden" name="_next" value="https://dangel34.github.io/thanks">
-  <input type="hidden" name="_captcha" value="true">
-  <!-- Honeypot — leave this blank, bots fill it -->
+  <input type="hidden" name="_captcha" value="false">
+  <!-- Honeypot — bots fill this; real users leave it blank -->
   <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
 
   <div class="form-group">

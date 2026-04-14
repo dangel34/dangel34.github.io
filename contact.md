@@ -9,23 +9,13 @@ Use the form below to send a message directly to my inbox. I'll get back to you 
 
 ---
 
-<!-- ================================================================
-  FormSubmit.co setup notes:
-  1. The first submission will trigger an activation email to your inbox.
-     Click the link to confirm — after that, all submissions deliver normally.
-  2. For stronger privacy, replace the email in the action URL with your
-     FormSubmit hash: visit https://formsubmit.co after activating, copy
-     your unique hash, and update the action to:
-       action="https://formsubmit.co/YOUR_HASH_HERE"
-     This keeps your real email out of the HTML entirely.
-================================================================ -->
-
 <form
   class="contact-form"
   action="https://formsubmit.co/amatory.madder_1s@icloud.com"
   method="POST">
 
   <!-- FormSubmit configuration -->
+  <input type="hidden" name="_url" value="https://dangel34.github.io/contact">
   <input type="hidden" name="_subject" value="Portfolio Contact">
   <input type="hidden" name="_next" value="https://dangel34.github.io/thanks">
   <input type="hidden" name="_captcha" value="false">

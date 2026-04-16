@@ -1,0 +1,5 @@
+Contact: https://github.com/dangel34
+Expires: 2027-04-16T00:00:00.000Z
+Preferred-Languages: en
+Canonical: https://dangel34.github.io/.well-known/security.txt
+Policy: https://dangel34.github.io/security

@@ -5,3 +5,6 @@ markdown: kramdown
 
 minima:
   skin: dark
+
+include:
+  - .well-known

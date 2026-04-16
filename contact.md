@@ -20,7 +20,7 @@ Use the form below to send a message directly to my inbox. I'll get back to you 
   <input type="hidden" name="_next" value="https://dangel34.github.io/thanks">
   <input type="hidden" name="_captcha" value="false">
   <!-- Honeypot — bots fill this; real users leave it blank -->
-  <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+  <input type="text" name="_honey" class="form-honeypot" tabindex="-1" autocomplete="off">
 
   <div class="form-group">
     <label for="name">Name</label>

@@ -28,7 +28,7 @@
     content="
       default-src 'self';
       script-src 'self';
-      style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com;
+      style-src 'self' https://cdnjs.cloudflare.com;
       img-src 'self' data:;
       font-src 'self' https://cdnjs.cloudflare.com;
       object-src 'none';
@@ -37,13 +37,19 @@
       form-action https://formsubmit.co;
     ">
 
+  <!-- Permissions Policy — disable unused browser features -->
+  <meta http-equiv="Permissions-Policy"
+    content="camera=(), microphone=(), geolocation=(), payment=(), usb=(), gyroscope=(), magnetometer=(), accelerometer=()">
+
   <!-- =========================
        Styles
   ========================== -->
 
   <link rel="icon" type="image/svg+xml" href="{{ '/assets/favicon.svg' | relative_url }}">
   <link rel="stylesheet" href="{{ '/assets/css/dark.css' | relative_url }}">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+        integrity="sha384-/o6I2CkkWC//PSjvWC/eYN7l3xM3tJm8ZzVkCOfp//W05QcE3mlGskpoHB6XqI+B"
+        crossorigin="anonymous">
   <script src="{{ '/assets/js/theme-init.js' | relative_url }}"></script>
 
 </head>
